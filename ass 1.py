@@ -32,7 +32,8 @@ class Insta:
 
 
 class Whatsapp:
-    def __init__(self,chat,calls):
+    def __init__(self,post,stry,chat,calls):
+        super().__init__(post,stry)
         self.chat=chat
         self.call=calls
     def act2(self):
@@ -44,8 +45,8 @@ class Yann(Insta,Whatsapp):
         super().__init__(post,stry,chat,calls)
 
     def act3(self):
-        super().act()
-        super().act2()
+        self.act()
+        self.act2()
 
 
 
